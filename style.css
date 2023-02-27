@@ -1,0 +1,608 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: rgba(27, 26, 23, 1);
+  border-color: rgba(253, 253, 251, 1);
+}
+
+.container {
+  margin: 0 7vw;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+/*------ HEADER -------*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 31px 0;
+  color: rgba(85, 82, 72, 1);
+}
+
+.menu nav a {
+  text-decoration: none;
+  color: rgba(85, 82, 72, 1);
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.menu nav {
+  display: flex;
+  gap: 65px;
+  font-size: 14px;
+}
+
+.icons {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+}
+
+/*------ MAIN -------*/
+
+.main {
+  display: flex;
+  gap: 3.6vw;
+  margin-bottom: 74px;
+}
+
+.description {
+  margin: auto 6.6vw;
+  z-index: 1;
+}
+
+.description h1 {
+  font-size: 45px;
+  margin: 15px 0;
+}
+
+.description h1::before {
+  content: "";
+  display: block;
+  background-color: rgba(139, 131, 113, 1);
+  width: 50px;
+  height: 1px;
+  position: relative;
+  top: 35px;
+  left: -60px;
+}
+
+.description h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.description p {
+  font-weight: 100;
+  font-size: 14px;
+  margin: 35px 0;
+  line-height: 1.53;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.description button {
+  background-color: rgba(68, 66, 64, 1);
+  color: rgba(255, 255, 255, 1);
+  width: 205px;
+  height: 64px;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+}
+
+.picture {
+  position: relative;
+  width: 600px;
+}
+
+.figure {
+  position: absolute;
+  z-index: -5;
+  top: 5px;
+  left: -170px;
+}
+
+.picture .price {
+  position: absolute;
+  top: 130px;
+  left: -55px;
+  font-family: "Prata", serif;
+  font-size: 16px;
+}
+
+.size {
+  position: absolute;
+  top: 680px;
+  left: 480px;
+  font-family: "Prata", serif;
+  font-size: 16px;
+}
+
+.picture .price::after {
+  content: "";
+  display: block;
+  background-color: rgba(139, 131, 113, 1);
+  width: 50px;
+  height: 1px;
+  position: relative;
+  top: -13px;
+  left: 80px;
+}
+
+.size::before {
+  content: "";
+  display: block;
+  background-color: rgba(139, 131, 113, 1);
+  width: 50px;
+  height: 1px;
+  position: relative;
+  top: 10px;
+  left: -60px;
+}
+
+/*------ POPULAR -------*/
+
+.popular {
+  margin-bottom: 74px;
+}
+
+.popular h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.all {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(68, 66, 64, 1);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.all p::after {
+  content: "";
+  display: block;
+  background-color: rgba(196, 192, 182, 1);
+  width: 104px;
+  height: 1px;
+  position: relative;
+  top: 10px;
+}
+
+.watches {
+  display: grid;
+  gap: 2.5vw;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.watch {
+  padding: 1.5vw;
+}
+
+.watch h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.watch .price {
+  font-family: "Prata", serif;
+  font-size: 12px;
+}
+
+.watch .watch_img {
+  border: double 1px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at left, transparent, rgba(226, 208, 196, 1));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  display: inline-block;
+}
+
+.more {
+  padding-left: 60px;
+  margin: 0;
+}
+
+.more a {
+  text-decoration: none;
+  color: rgba(27, 26, 23, 1);
+}
+
+.more::before {
+  content: "";
+  display: block;
+  background-color: rgba(139, 131, 113, 1);
+  width: 30px;
+  height: 1px;
+  position: relative;
+  top: 10px;
+  left: -45px;
+}
+
+/* ------- BANNER --------*/
+
+.banner {
+  background: linear-gradient(
+    to right,
+    rgba(247, 245, 239, 1) 35%,
+    rgba(253, 253, 251, 1) 35%
+  );
+  min-height: 519px;
+  margin-bottom: 74px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.small_circle {
+  position: absolute;
+  top: 0px;
+  left: calc(100% - 215px);
+}
+
+.big_circle {
+  position: absolute;
+  top: 10px;
+  left: calc(100% - 222px);
+}
+
+.pagination {
+  z-index: 1;
+}
+
+.pagination_item_block {
+  display: flex;
+  gap: 5vw;
+}
+
+.banner_info p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 35px 0;
+}
+
+.banner_info button {
+  background-color: rgba(212, 176, 152, 1);
+  color: rgba(255, 255, 255, 1);
+  width: 205px;
+  height: 64px;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+}
+
+.pagination_item_pagination {
+  margin: 20px;
+  font-family: "Prata", serif;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ------ NEWS ------- */
+
+.news {
+  margin-bottom: 74px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news_info {
+  padding: 0 10px 20px 0;
+}
+
+.news_info p {
+  margin-bottom: 120px;
+  line-height: 1.7;
+}
+
+.news_info_icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.news_photo {
+  display: grid;
+  grid-template-areas:
+    "photo1 photo3"
+    "photo2 photo3";
+  gap: 10px;
+}
+
+.photo1 {
+  grid-area: photo1;
+}
+.photo2 {
+  grid-area: photo2;
+}
+.photo3 {
+  grid-area: photo3;
+}
+
+/* ------ FOOTER ------- */
+
+footer {
+  background-color: rgba(68, 66, 64, 1);
+  min-height: 275px;
+  margin: auto 0;
+  display: flex;
+}
+
+.footer_container {
+  display: grid;
+  gap: 8vw;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin: auto;
+  width: calc(100% - 97px * 2);
+}
+
+.footer_logo {
+  color: rgba(255, 255, 255, 1);
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin: 5px 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer_container h2 {
+  font-weight: 700;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.07em;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+}
+
+.footer_container a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.contacts,
+.about,
+.for_buyers,
+.payment_delivery {
+  display: flex;
+  flex-direction: column;
+  vertical-align: top;
+  padding-left: 3vw;
+}
+
+/* ------- MEDIA -------- */
+
+@media screen and (max-width: 1200px) {
+  .picture {
+    scale: 0.8;
+  }
+
+  .size {
+    top: 680px;
+    left: -75px;
+  }
+
+  .size::after {
+    content: "";
+    display: block;
+    background-color: rgba(139, 131, 113, 1);
+    width: 50px;
+    height: 1px;
+    position: relative;
+    top: -10px;
+    left: 135px;
+  }
+
+  .size::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .menu nav {
+    gap: 3vw;
+  }
+
+  .icons {
+    gap: 1vw;
+  }
+
+  .main {
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .picture {
+    width: 400px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .watch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .big_circle {
+    top: calc(100% - 507px);
+  }
+
+  .pagination_item_block {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .banner_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner_info h1 {
+    margin: 0;
+  }
+
+  .pagination_item_block img {
+    width: 415px;
+  }
+
+  .news {
+    flex-direction: column;
+  }
+
+  .news_info p {
+    margin-bottom: 16px;
+  }
+
+  .news_photo {
+    scale: 0.78;
+  }
+
+  .footer_container {
+    gap: 3vw;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .icons {
+    gap: 4vw;
+  }
+
+  .description h1 {
+    text-align: center;
+  }
+
+  .description h1::before {
+    display: none;
+  }
+
+  .picture {
+    scale: 1;
+    margin: 20px 0;
+    width: 270px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .main_watch,
+  .figure {
+    width: 200px;
+  }
+
+  .figure {
+    top: -4px;
+    left: 0px;
+  }
+
+  .picture .price,
+  .size {
+    font-size: 12px;
+  }
+
+  .picture .price {
+    top: 20px;
+    left: 0px;
+  }
+
+  .picture .price img {
+    height: 10px;
+  }
+
+  .size {
+    top: 230px;
+    left: 0px;
+  }
+
+  .picture .price::after {
+    width: 100px;
+    top: 5px;
+    left: 0px;
+  }
+
+  .size::after {
+    width: 100px;
+    top: 5px;
+    left: 0px;
+  }
+
+  .watches {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .watch .watch_img {
+    scale: 0.6;
+  }
+
+  .pagination_item_block img {
+    width: 300px;
+  }
+
+  .banner {
+    margin: 0;
+  }
+
+  .banner_info {
+    width: 270px;
+  }
+
+  .banner_info p br {
+    display: none;
+  }
+
+  .news_photo {
+    scale: 1;
+    grid-template-areas:
+      "photo1"
+      "photo2"
+      "photo3";
+  }
+
+  .photo1,
+  .photo2,
+  .photo3 {
+    width: 250px;
+  }
+}
